@@ -10,7 +10,7 @@ const Options = () => {
       icon=""
       compact={true}
       mode="contained"
-      onPress={() => console.log("Pressed")}
+      onPress={() => console.log(`${genre}`)}
     >
       {genre}
     </Button>
