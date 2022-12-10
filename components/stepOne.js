@@ -3,7 +3,7 @@ import { Avatar, Button, Card, Title, Paragraph } from "react-native-paper";
 import { StyleSheet, Text, View, Image } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
-const NextRound = () => (
+const StepOne = () => (
   <Card>
     <Card.Content>
       <View style={styles.picContainer}>
@@ -12,24 +12,14 @@ const NextRound = () => (
           source={{ uri: "https://picsum.photos/700" }}
         />
       </View>
-      <Title style={styles.cardTitle}>Next Round</Title>
+      <Title style={styles.cardTitle}>Step One</Title>
       <Paragraph style={styles.cardParagraph}>
-        You have 2 cards left! You're doing great!
+        A place where you can get help making decisions without overthinking.
       </Paragraph>
     </Card.Content>
     <Button style={styles.continueBtn} mode="contained">
-      <Text style={styles.btnTxt}>Continue</Text>
+      <Text style={styles.btnTxt}>Next</Text>
     </Button>
-    <View style={styles.homeSettingContainer}>
-      <View style={styles.homeContainer}>
-        <Feather name="home" size={37} color="black" title="No" />
-        <Text style={styles.homeSettingsTxt}>Home</Text>
-      </View>
-      <View style={styles.homeSettingBox}>
-        <Feather name="settings" size={37} color="black" />
-        <Text style={styles.homeSettingsTxt}>Settings</Text>
-      </View>
-    </View>
   </Card>
 );
 
@@ -47,7 +37,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 45,
     fontFamily: "Mali-Regular",
     fontSize: 23,
-    marginBottom: 100,
+    marginBottom: 70,
     paddingTop: 2,
   },
   cardPic: {
@@ -58,24 +48,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 90,
   },
-  homeSettingContainer: {
-    flexDirection: "row",
-    justifyContent: "center",
-    marginTop: 30,
-    marginBottom: 59,
-  },
-  homeSettingBox: {
-    alignItems: "center",
-  },
-  homeSettingsTxt: {
-    fontFamily: "Mali-Regular",
-    fontSize: 16,
-  },
-  homeContainer: {
-    marginRight: 32,
-  },
+
   continueBtn: {
     marginHorizontal: 90,
+    marginBottom: 130,
   },
   btnTxt: {
     fontFamily: "Mali-Regular",
@@ -83,4 +59,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default NextRound;
+export default StepOne;
