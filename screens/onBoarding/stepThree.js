@@ -23,9 +23,10 @@ const StepThree = ({ navigation }) => {
             source={require("../../assets/icons/Phone2.png")}
           />
         </View>
-        <Title style={styles.cardTitle}>Step Three</Title>
+        <Title style={styles.cardTitle}>Limit your cards</Title>
         <Paragraph style={styles.cardParagraph}>
-          You can use the app by swiping right for yes swiping left for no.
+          By process of elimination we will help you choose a movie. You'll
+          select out of 7, 5 , or 3 that you are interested in.
         </Paragraph>
         <View style={styles.dotContainer}>
           <Octicons
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginHorizontal: "6%",
     fontFamily: "Mali-Regular",
-    marginTop: "10%",
+    marginTop: "7%",
     fontSize: 23,
     paddingTop: "1%",
   },
